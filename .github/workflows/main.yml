@@ -17,6 +17,9 @@ permissions:
 jobs:
   build-windows:
     runs-on: windows-latest
+    defaults:
+      run:
+        working-directory: ./blending-calculator
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -32,6 +35,7 @@ jobs:
         with:
           node-version: '20'
           cache: 'pnpm'
+          cache-dependency-path: blending-calculator/pnpm-lock.yaml
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
@@ -48,13 +52,13 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: BlendingCalculator-Windows
-          path: release/*.exe
+          path: blending-calculator/release/*.exe
 
       - name: Create Release
         if: github.ref == 'refs/heads/main' || github.ref == 'refs/heads/master'
         uses: softprops/action-gh-release@v1
         with:
-          files: release/*.exe
+          files: blending-calculator/release/*.exe
           tag_name: v${{ github.run_number }}
           name: Release v${{ github.run_number }}
           draft: false
