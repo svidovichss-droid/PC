@@ -1,4 +1,27 @@
-# React + TypeScript + Vite
+# Blending Calculator
+
+A React + TypeScript + Vite application for blending calculations.
+
+## Quick Start - Run in Browser
+
+To run the application and open it in your browser:
+
+```bash
+python3 serve.py
+```
+
+This will start a local HTTP server and automatically open http://localhost:8000 in your default browser.
+
+Or manually:
+
+```bash
+cd dist
+python3 -m http.server 8000
+```
+
+Then open http://localhost:8000 in your browser.
+
+## Development Setup
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
