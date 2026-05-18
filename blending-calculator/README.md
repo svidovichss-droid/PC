@@ -21,6 +21,23 @@ python3 -m http.server 8000
 
 Then open http://localhost:8000 in your browser.
 
+## Deploy to GitHub Pages
+
+To deploy this application to GitHub Pages:
+
+1. **Enable GitHub Pages** in your repository settings:
+   - Go to Settings → Pages
+   - Under "Build and deployment", select "GitHub Actions" as the source
+
+2. **Push to main/master branch**:
+   - The GitHub Actions workflow will automatically build and deploy your app
+   - Your app will be available at `https://yourusername.github.io/your-repo-name/`
+
+3. **Manual deployment**:
+   - Push your code to the `main` or `master` branch
+   - The workflow in `.github/workflows/deploy.yml` will run automatically
+   - Check the Actions tab to monitor the deployment progress
+
 ## Development Setup
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
