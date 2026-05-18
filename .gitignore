@@ -1,0 +1,27 @@
+```
+# Build artifacts
+dist/
+build/
+*.pyc
+__pycache__/
+
+# Environment
+.env
+.env.local
+*.env.*
+
+# Editors
+.vscode/
+.idea/
+*.swp
+*.swo
+*.tmp
+
+# Logs
+*.log
+
+# Dependencies
+node_modules/
+.venv/
+venv/
+```
