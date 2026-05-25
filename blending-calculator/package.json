@@ -101,15 +101,15 @@
     ],
     "win": {
       "target": ["nsis"],
-      "icon": "dist/icon.ico"
+      "icon": "public/icon.svg"
     },
     "mac": {
       "target": ["dmg"],
-      "icon": "dist/icon.icns"
+      "icon": "public/icon.svg"
     },
     "linux": {
       "target": ["AppImage"],
-      "icon": "dist/icon.png"
+      "icon": "public/icon.svg"
     }
   }
 }

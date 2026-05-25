@@ -1,1 +1,51 @@
-Nothing should be ignored based on the provided file changes. The only modified file is `.github/workflows/main.yml`, which is a workflow configuration file that should be tracked in version control.
+```
+# Dependencies
+node_modules/
+
+# Build artifacts
+dist/
+build/
+target/
+
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Environment variables
+.env
+.env.local
+*.env.*
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Coverage reports
+coverage/
+htmlcov/
+.coverage
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package managers
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+.mypy_cache/
+.pytest_cache/
+```
